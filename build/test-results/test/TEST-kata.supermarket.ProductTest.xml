@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kata.supermarket.ProductTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-15T09:39:12" hostname="SBGMLS8D3DG8WN" time="0.0">
+  <properties/>
+  <testcase name="singleItemHasExpectedUnitPriceFromProduct()" classname="kata.supermarket.ProductTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

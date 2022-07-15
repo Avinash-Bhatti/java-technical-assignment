@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kata.supermarket.WeighedProductTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-07-15T09:39:12" hostname="SBGMLS8D3DG8WN" time="0.006">
+  <properties/>
+  <testcase name="[1] 100.00, 1.00, 100.00" classname="kata.supermarket.WeighedProductTest" time="0.001"/>
+  <testcase name="[2] 100.00, 0.33333, 33.33" classname="kata.supermarket.WeighedProductTest" time="0.0"/>
+  <testcase name="[3] 100.00, 0.33335, 33.34" classname="kata.supermarket.WeighedProductTest" time="0.001"/>
+  <testcase name="[4] 100.00, 0, 0.00" classname="kata.supermarket.WeighedProductTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kata.supermarket.CheckoutTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-07-15T09:39:12" hostname="SBGMLS8D3DG8WN" time="0.003">
+  <properties/>
+  <testcase name="shouldCalculateTheTotalTakingDiscountsIntoAccount()" classname="kata.supermarket.CheckoutTest" time="0.001"/>
+  <testcase name="addItemShouldAddItemsToBasket()" classname="kata.supermarket.CheckoutTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

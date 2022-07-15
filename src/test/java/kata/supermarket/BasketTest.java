@@ -1,6 +1,7 @@
 package kata.supermarket;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -8,6 +9,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -21,6 +23,19 @@ class BasketTest {
         final Basket basket = new Basket();
         items.forEach(basket::add);
         assertEquals(new BigDecimal(expectedTotal), basket.total());
+    }
+
+    @Test
+    @DisplayName("Subtracts the discounts of the items")
+    void subtractsTheDiscountsOfTheItems() {
+        List<Item> itemsWithDiscounts = List.of(
+                aPintOfMilk().withDiscount(new BigDecimal("0.10")),
+                aPackOfDigestives().withDiscount(new BigDecimal("0.55"))
+        );
+
+        final Basket basket = new Basket().withItems(itemsWithDiscounts);
+
+        assertEquals(new BigDecimal("1.39"), basket.total());
     }
 
     static Stream<Arguments> basketProvidesTotalValue() {
@@ -57,15 +72,15 @@ class BasketTest {
     }
 
     private static Item aPintOfMilk() {
-        return new Product(new BigDecimal("0.49")).oneOf();
+        return new Product(new BigDecimal("0.49"), "milk1").oneOf();
     }
 
     private static Item aPackOfDigestives() {
-        return new Product(new BigDecimal("1.55")).oneOf();
+        return new Product(new BigDecimal("1.55"), "dig1").oneOf();
     }
 
     private static WeighedProduct aKiloOfAmericanSweets() {
-        return new WeighedProduct(new BigDecimal("4.99"));
+        return new WeighedProduct(new BigDecimal("4.99"), "americanSweets1");
     }
 
     private static Item twoFiftyGramsOfAmericanSweets() {
@@ -73,7 +88,7 @@ class BasketTest {
     }
 
     private static WeighedProduct aKiloOfPickAndMix() {
-        return new WeighedProduct(new BigDecimal("2.99"));
+        return new WeighedProduct(new BigDecimal("2.99"), "pickMix1");
     }
 
     private static Item twoHundredGramsOfPickAndMix() {

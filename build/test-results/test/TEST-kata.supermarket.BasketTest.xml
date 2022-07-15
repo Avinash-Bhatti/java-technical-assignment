@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kata.supermarket.BasketTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-07-15T09:39:12" hostname="SBGMLS8D3DG8WN" time="0.056">
+  <properties/>
+  <testcase name="Subtracts the discounts of the items" classname="kata.supermarket.BasketTest" time="0.003"/>
+  <testcase name="no items" classname="kata.supermarket.BasketTest" time="0.021"/>
+  <testcase name="a single item priced per unit" classname="kata.supermarket.BasketTest" time="0.0"/>
+  <testcase name="multiple items priced per unit" classname="kata.supermarket.BasketTest" time="0.001"/>
+  <testcase name="a single weighed item" classname="kata.supermarket.BasketTest" time="0.001"/>
+  <testcase name="multiple weighed items" classname="kata.supermarket.BasketTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
